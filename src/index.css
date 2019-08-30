@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'MontReg';
+  src: url('/fonts/Montserrat-Regular.ttf');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MontBold';
+  src: url('/fonts/Montserrat-SemiBold.ttf');
+  font-display: swap;
+}
+
+body {
+  font-family: MontReg, sans-serif;
+  font-size: 20px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: rgb(26, 26, 26);
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+.logo,
+.backBtn {
+  font-family: MontBold;
+}
+
+li {
+  list-style-type: none;
+  display: inline;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.gbl-space {
+  padding: 0 5%;
+}
+
+button {
+  background: none;
+  padding: 1em 2em;
+  border: 3px solid rgb(26, 26, 26);
+  border-radius: 40px;
+  font-family: inherit;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background: #fff;
+  border-color: royalblue;
+  color: royalblue;
+}
+
+.btnDisabled {
+  border-color: royalblue;
+  color: royalblue;
+  opacity: 0.9;
+}
+
+.btnDisabled:hover {
+  background: inherit;
+  border-color: royalblue;
+}
+
+
+.space-top {
+  margin-top: 10% !important;
+}
+
+input {
+  border-radius: 100px;
+  padding: 1em 2em;
+  font-family: inherit;
+  border: none;
+}

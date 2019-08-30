@@ -1,0 +1,272 @@
+@media only screen and (min-width: 801px) {
+    .checkout-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(5vmin, 1fr));
+    }
+
+
+    .checkout-col {
+        padding: 5%;
+    }
+
+    #checkoutColumns .checkout-grid {
+        padding-bottom: 2% !important;
+    }
+
+    .only-mobile {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 1035px) {
+    .bg {
+        height: 120vw;
+    }
+
+    .feature-img img {
+        width: 72%;
+    }
+
+    footer {
+        min-height: 35vw;
+        font-size: 2vmin;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    .bg {
+        height: 140vw;
+    }
+
+    .feature {
+        padding-bottom: 6em;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        font-size: 2.5vmin;
+    }
+
+    .main {
+        height: 270vmin;
+    }
+
+    .bg {
+        height: 350vmin;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+        grid-gap: 50%;
+    }
+
+    .feature {
+        padding-bottom: 7em;
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+        border-radius: 20px;
+        padding: 0 10%;
+        font-size: 4vmin;
+    }
+
+    .feature:nth-child(1),
+    .feature:nth-child(3),
+    .feature-img {
+        margin: 0;
+    }
+
+    .feature:nth-child(2) {
+        transform: translate(0);
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .feature:nth-child(2) .feature-items {
+        justify-self: left;
+    }
+
+    .feature-img img {
+        width: 30vmin;
+        filter: drop-shadow(20px 28px 10px rgba(0, 0, 0, 0.25));
+    }
+
+    .feature img {
+        transition: all 0.35s linear;
+    }
+
+    .feature:hover img {
+        animation: none;
+        transform: translateY(-10%);
+        filter: drop-shadow(20px 56px 20px rgba(0, 0, 0, 0.25));
+    }
+
+    .feature-items {
+        margin: 10% 5%;
+        text-align: left;
+    }
+
+    .sb {
+        position: absolute;
+        top: 50vmin;
+        width: 110%;
+        margin-left: -10%;
+    }
+
+    .sb img {
+        width: 3vmin;
+        transform: translateY(0.5vmin);
+    }
+
+
+    #checkoutColumns.checkoutWrap {
+        display: none;
+    }
+
+
+    footer {
+        height: 35em;
+        font-size: 12px;
+    }
+
+    .ft-wrap {
+        grid-template-areas:
+            'top2''top'
+            'middle'
+            'bottom''bottom2'
+        ;
+        grid-row-gap: 15px;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .ft-wrap form {
+        width: 100%;
+    }
+
+    .pay-methods {
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .pay-methods img {
+        width: 40px;
+    }
+
+    .pay-methods img:last-child {
+        width: 50px;
+    }
+
+    /* Details page */
+    .details-container.main {
+        height: 100%;
+    }
+
+    .details {
+        grid-template-columns: 1fr;
+    }
+
+    .details-gallery,
+    .details-info {
+        text-align: center;
+    }
+
+    /* Modal */
+    .modal {
+        width: 100%;
+        border-radius: 0;
+        font-size: 13px;
+        padding: 5% 2.5%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .modal div:nth-child(2) img:nth-child(1) {
+        top: -20%;
+        right: -10%;
+    }
+
+    .modal-c {
+        display: flex;
+        font-size: 1.3em;
+        align-items: center;
+    }
+
+    .modal-c img {
+        width: 5vmin;
+        margin-left: 1vmin;
+    }
+
+
+    /* Burger Menu */
+    .defaultMenu,
+    .burgerMenuList {
+        display: none;
+    }
+
+    .showMenu {
+        display: block;
+    }
+
+    .burgerMenu .burgerMenuList,
+    .showMenu .burgerMenuList {
+        position: absolute;
+        right: 0;
+        width: 100%;
+        padding: 5%;
+        background: #fff;
+        border-bottom: 2px solid #56CCF2;
+        z-index: 1;
+    }
+
+    .showMenu .burgerMenuList {
+        animation: slideOut 1s;
+        display: block;
+        transform: translateX(-200%);
+    }
+
+    .burgerMenu .burgerMenuList {
+        animation: slideIn 1s;
+        display: block;
+        transform: translateX(0%);
+    }
+
+    .showMenu img {
+        width: 10vmin;
+    }
+
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    /* html,
+    body {
+        width: 104%;
+    } */
+
+    body {
+        font-size: 14px;
+    }
+
+    .Title h1 {
+        font-size: 9vmin;
+    }
+
+    .logo img,
+    .checkout img {
+        width: 20px;
+    }
+
+    /* .App {
+        width: 100%;
+    }
+
+    .bg {
+        width: 109%;
+    } */
+
+}
