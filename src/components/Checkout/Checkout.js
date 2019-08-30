@@ -26,7 +26,7 @@ class Checkout extends Component {
                                     </div>
                                     <CheckoutColumns />
                                     <BagList value={value} />
-                                    <CheckoutTotal value={value} />
+                                    <CheckoutTotal value={value} history={this.props.history} />
                                 </React.Fragment>
                             )
                         } else {

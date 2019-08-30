@@ -265,6 +265,7 @@ nav li {
 
 .addBag>img {
   width: 40px !important;
+  z-index: 1;
 }
 
 .inBag,
@@ -438,6 +439,10 @@ nav li {
   align-items: center;
   justify-content: center;
   font-size: 1.4em;
+}
+
+.pay button:hover {
+  color: inherit;
 }
 
 .pay img {

@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PayPalButton from './PayPalButton';
 
-const CheckoutTotal = ({ value }) => {
+const CheckoutTotal = ({ value, history }) => {
     const { cartSubtotal, cartTax, cartTotal, clearCart } = value;
     return (
         <React.Fragment>
@@ -22,7 +23,8 @@ const CheckoutTotal = ({ value }) => {
                             Checkout
                             <img src="/assets/checkout.svg" alt="Now" />
                         </button>
-                    </div>
+                    </div><br />
+                    <PayPalButton total={cartTotal} clearCart={clearCart} history={history} />
                 </div>
             </div>
         </React.Fragment>
